@@ -1,0 +1,189 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#0fa4af; 
+    overflow-x: hidden;
+}
+
+.about-container{
+    width: 100vw;
+    background-color: #0fa4af;
+    margin-top: 100px;
+}
+
+.about-background{
+   width:600px;
+}
+
+.agency-logo{
+    width: 250px;
+    height: 200px;
+}
+
+.about-info{
+    max-width: 650px;
+    color: #f8f9fa;
+    text-align: justify;
+}
+
+.about-info span{
+    color: #fd7e14;
+    font-size: 35px;
+}
+
+.about-content{
+    padding-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-sociaLinks{
+    display:flex;
+    justify-content: center;
+    gap:40px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.about-sociaLinks img{
+    width:40px;
+    height: 40px;
+}
+
+.about-container h1{
+    text-align:center;
+    color: #fd7e14 ;
+    padding-top: 80px;
+    font-size: 45px;
+}
+
+.about-second{
+    background-color: black;
+    padding-bottom: 50px;
+}
+
+.about-cards{
+    display:grid;
+    grid-template-columns:350px 350px 350px;
+    justify-content: center;
+    gap:30px;
+    margin-left:5px;
+    margin-right:5px;
+}
+
+.card{
+   position: relative;
+   max-width:400px;
+   height:350px;
+   text-align: center;  
+   margin-top: 50px;
+   overflow: hidden;
+   border-radius: 10px;
+}
+
+.card img{
+    width:400px;
+    height:100%;
+    object-fit: cover;
+}
+
+.card-content{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left:0;
+    z-index: 100;
+    color: #f8f9fa;
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: #0fa4af;
+    opacity:0.8;
+}
+
+
+@media(max-width:1200px){
+    .about-cards{
+        margin-left: 20px;
+        margin-right: 20px;
+        border-radius: 15px;
+    }
+}
+
+
+@media(max-width:1080px){
+    .about-content{
+        padding-top: 10px;
+        flex-direction: column-reverse;
+    }
+    .about-info{
+        max-width: 600px;
+        color: #f8f9fa;
+        margin-bottom: 30px;
+    }
+
+    .about-cards{
+        display:grid;
+        grid-template-columns:330px 330px;
+        
+    }
+
+}
+
+@media(max-width:700px){
+    .about-info{
+        max-width: 500px;
+        text-align: center;
+    }
+
+}
+
+@media(max-width:640px){
+    .about-cards{
+        grid-template-columns:250px 250px;
+    }
+
+}
+
+@media(max-width:560px){
+    .about-info{
+        max-width: 400px; 
+    }
+    .about-container{
+        margin-top: 20px;
+    }
+}
+
+@media(max-width:500px){
+    .about-info{
+        max-width: 350px;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    .about-cards{
+        grid-template-columns:350px;
+    }
+}
+
+@media(max-width:400px){
+    .about-info{
+        max-width: 300px;
+    }
+    .about-cards{
+        grid-template-columns:300px;
+        border-radius: 10px;
+    }
+
+    .card{
+        border-radius: 10px;
+    }
+}
+
+
+
+
