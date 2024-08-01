@@ -5,7 +5,7 @@ function Home () {
   return (
     <>
     <div className="home-container">
-        <img src="village.jpg" alt="village" />
+        <img src="village.jpg" alt="village"  className='background-img'/>
         <div className="nav">
             <li>Home</li>  <img src="home.png" alt="home" className='home' />
             <li>About</li> <img src="about.png" alt="about" className='about' />

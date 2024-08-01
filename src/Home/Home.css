@@ -8,7 +8,7 @@
     background-color: #212121;
 }
 
-.home-container img{
+.background-img{
     width: 100vw;
     height: 100vh;
     object-fit:cover;
@@ -129,7 +129,7 @@
 
 @media(max-width:530px){
 
-    .home-container img{
+    .background-img{
         height: 500px;
     }
     
